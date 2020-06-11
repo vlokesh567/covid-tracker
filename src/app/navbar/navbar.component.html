@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+<mat-toolbar-row>
+    <span>COVID TRACKER</span>
+    <span class="example-spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu">
+        <button mat-icon-button  aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </button>
+    <mat-menu #menu="matMenu">
+    <a href="#" mat-menu-item>Menu One </a>
+    <a href="#" mat-menu-item>Menu Two</a>
+    <a href="#" mat-menu-item>Menu Three </a>
+    <a href="#" mat-menu-item>Menu Four</a>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>

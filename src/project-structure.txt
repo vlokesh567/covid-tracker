@@ -1,0 +1,23 @@
+APP COMPONENT
+|
+|----REGISTERATION COMPONENT--| SUBADMIN REGISTERATION | USER OR TRACKER REGISTERATION
+|----LOGIN COMPONENT            
+     |
+     |----ADMIN LOGIN------------| REGISTER SUBADMIN | MODIFY SUBADMIN | REMOVE SUBADMIN | 
+     |----SUBADMIN LOGIN---------| REGISTER USER OR TRACKER DETAILS | USERS & TACKERS LIST  | COMPLAINT TRACKER CODE LIST 
+     |----TRACKERS LOGIN                                              |                                   |
+                |                                                     |--USER LIST-- EDIT OR REMOVE       |--COMPLAINT CODE LIST
+                |                                                     |--TRACKERS LIST-- EDIT OR REMOVE   |--CODE TRACKING BY DATE
+                |                                                                                         |--REPORT
+        ( POLICE AND SHOP TRACKERS )
+        ---------------------------------
+        |                               |
+        |                               |
+    VERIFY TRACKING CODE          COMPLAINT ON CODE
+
+
+
+    1) ADMIN-----PERSON WHO CREATE THE SUBADMINS(EX:-SACHIVALAI OFFICER)
+    2) SUBADMIN--VOLUNTEERS
+    3) TRACKERS--SHOP OWNERS, POLICE etc,..
+    4) USERS ----PEOPLE

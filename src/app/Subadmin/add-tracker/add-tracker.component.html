@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 mt-5">
+            <mat-card>
+                <mat-card-header color="accent">
+                    <mat-card-title >ADD TRACKERS DETAILS</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <form class="example-form">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>First Name</mat-label>
+                                    <input matInput placeholder="First Name" >
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Last Name</mat-label>
+                                    <input matInput placeholder="Last Name" >
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Mobile Number</mat-label>
+                                    <input matInput placeholder="Mobile Number" >
+                                  </mat-form-field>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>EMail Id</mat-label>
+                                    <input matInput placeholder="EMail Id" >
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>ADHAAR NUMBER</mat-label>
+                                    <input matInput placeholder="ADHAAR NUMBER" >
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Tracker Identification</mat-label>
+                                    <mat-select [(ngModel)]="selectedValue" name="food">
+                                      <mat-option *ngFor="let tracker of TrackerList" [value]="tracker.value">
+                                        {{tracker.viewValue}}
+                                      </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-12 col-12" *ngIf="selectedValue == 'shopkeeper'">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Shop Name</mat-label>
+                                    <input matInput placeholder="SHOPE NAME" >
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-12 col-12" *ngIf="selectedValue == 'police'">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Identification Number</mat-label>
+                                    <input matInput placeholder="ID NUMBER" >
+                                </mat-form-field>
+                            </div>
+                        </div>
+                          <button mat-raised-button color="primary" class="btn-block">ADD TRACKER</button>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
