@@ -5,10 +5,11 @@ import { TrackersListComponent } from './Subadmin/trackers-list/trackers-list.co
 import { VerifyCodeComponent } from './Trackers/verify-code/verify-code.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SubadminListComponent } from './Admin/subadmin-list/subadmin-list.component';
 
 
 const routes: Routes = [
-  { path: '', component: SubadminRegistrationComponent }
+  { path: '', component: SubadminListComponent }
 ];
 
 @NgModule({
